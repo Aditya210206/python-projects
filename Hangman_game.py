@@ -27,7 +27,7 @@ while not game_over:
             display+=letter
         else:
             display+="_"
-    #print(display)
+    print(display)
     if guess not in chosen_word:
         lives-=1
         print(f"You guessed {guess} which is not present, you lose a life!")
