@@ -3,7 +3,7 @@ alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 
 
 
-def caeser(original_text,shift_amt,encode_or_decode):
+def caesar(original_text,shift_amt,encode_or_decode):
     output_text=""
     if encode_or_decode=="decode":
         shift_amt*=-1
@@ -22,7 +22,7 @@ while game_over:
     direction=input("Enter 'encode' to encrypt, and 'decode' to decrypt: ").lower()
     text=input("Type your message: ").lower()
     shift=int(input("Enter the number of shifts: "))
-    caeser(text,shift,direction)
+    caesar(text,shift,direction)
     restart=input("Type 'yes' if you want to continue and 'no' if you dont want to continue: ").lower()
     if restart=="no":
         game_over=False
